@@ -1,83 +1,86 @@
-<nav class="product-filter">
 
-    <h1>Jackets</h1>
-  
-    <div class="sort">
-  
-      <div class="collection-sort">
-        <label>Filter by:</label>
-        <select>
-          <option value="/">All Jackets</option>
-        </select>
-      </div>
-  
-      <div class="collection-sort">
-        <label>Sort by:</label>
-        <select>
-          <option value="/">Featured</option>
-        </select>
-      </div>
-  
-    </div>
-  
-  </nav>
-.product-filter {
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.product-filter h1 {
-    flex-grow: 1;
-}
 
-.sort {
-    display: flex;
-}
-
-.collection-sort {
-    display: flex;
-    flex-direction: column;
-}
-
-.products {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.products {
+
+
+.product-page {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
 }
 
-.product-card {
-  padding: 2%;
-  flex-grow: 1;
-  flex-basis: 16%;
 
-  display: flex; 
+.product-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.product-card {
-  flex: 1 16%;
-}
 .product-image img {
   max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.product-info {
-  margin-top: auto;
+
+
+.product-details {
+  flex: 1.5;
+  padding: 20px;
 }
-@media (max-width: 600px) {
-  .product-card {
-    flex: 1 46%;
-  }
+
+
+.product-details h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
-.products .product-card:first-child, 
-.products .product-card:nth-child(2) {
-  flex: 2 46%;
+
+.price {
+  font-size: 28px;
+  color: #e60000;
+  margin-bottom: 20px;
 }
-@media (max-width: 480px) {
-  .product-filter {
-    flex-direction: column;
-  }
-  .sort {
-    align-self: flex-start;
-  }
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
 }
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
