@@ -19,6 +19,7 @@ body {
 .product-page {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
